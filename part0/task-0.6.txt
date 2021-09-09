@@ -1,0 +1,19 @@
+title Task 0.5
+
+note over browser: 
+User enters content of new note to html form and clicks Save.
+Spa.js then adds note to internal notes array and redraws notes on viewport.
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa \n Request payload: {content: "test-note", date: "2021-09-09T11:47:11.637Z"}
+
+note over server:
+server hopefully saves the new note
+end note
+
+server->browser: Response: Status 201, payload: {"message":"note created"}
+
+note over browser: 
+Browser logs response to console.
+end note
+
