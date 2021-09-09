@@ -1,4 +1,4 @@
-title Task 0.5
+title Task 0.6
 
 note over browser: 
 User enters content of new note to html form and clicks Save.
